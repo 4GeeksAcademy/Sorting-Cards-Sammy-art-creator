@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Generador de Cartas</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -13,17 +14,18 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container">
+      <div class="input-container">
+        <label for="numCartas">Original:</label>
+        <input type="number" id="numbercards" class="btn btn-light" />
+        <button id="btndraw" class="btn btn-light">Draw</button>
+        <button id="btnsort" class="btn btn-light">Sort</button>
       </div>
+      <div id="cards-container"></div>
+      <h2>Select Sort Log</h2>
+      <!-- <h2>Bubble Sort Log</h2>-->
+      <div id="sorted-cards"></div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>

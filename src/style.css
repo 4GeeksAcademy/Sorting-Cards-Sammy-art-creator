@@ -1,1 +1,130 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: green;
+}
+.cards {
+  border: 0.8 solid #000;
+  width: 50px;
+  height: 80px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 1px 3px #000;
+  margin: 5px;
+}
+.cards .number {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+.cards.spades::before {
+  content: "\2660";
+  text-align: left;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.cards.spades::after {
+  content: "\2660";
+  transform: rotate(180deg);
+  text-align: left;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.cards.clubs::before {
+  content: "\2663";
+  text-align: left;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.cards.clubs::after {
+  content: "\2663";
+  transform: rotate(180deg);
+  text-align: left;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.cards.hearts::before {
+  content: "\2665";
+  text-align: left;
+  width: 100%;
+  color: red;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.cards.hearts::after {
+  content: "\2665";
+  transform: rotate(180deg);
+  text-align: left;
+  width: 100%;
+  color: red;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.cards.diams::before {
+  content: "\2666";
+  text-align: left;
+  width: 100%;
+  color: red;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.cards.diams::after {
+  content: "\2666";
+  transform: rotate(180deg);
+  text-align: left;
+  width: 100%;
+  color: red;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.input-container {
+  padding: 5px;
+}
+
+#cards-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+#sorted-cards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#sorted-cards .container-box {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+/*
+#sorted-cards .bubble-log .step-box {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+*/
